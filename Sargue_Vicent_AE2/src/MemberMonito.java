@@ -44,7 +44,7 @@ public void MailSender(String mail ) throws IOException {
             for (int i = 0; i < 10; i++) {
                 Thread.sleep(3000);
 
-                System.out.println(readline("mails.txt").size());
+                System.out.println("Actualmente hay "+readline("mails.txt").size()+" correos");
                 //comprobar que tenemos un nuevo gmail
                 cant2 = readline("mails.txt").size();
                 if (cant < cant2) {
